@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: #06080B;
+}
+.container1{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1460355976672-71c3f0a4bdac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vmax 12vmax;
+    font-size: 20px;
+    font-weight: 500;
+}
+.nav>li{
+    cursor: pointer;
+    position: relative;
+    
+}
+.nav>.ab::before{
+    content: "";
+    width: 0%;
+    height: 10%;
+    bottom: 0;
+    position: absolute;
+    background-color: white;
+    transition: 0.5s all;
+}
+.nav>.ab:hover::before {
+    width: 100%;
+}
+.logo>i{
+    font-size: 3vmax;
+    color: tomato;
+}
+.search>i{
+    padding-right: 1vmax;
+}
+.nav>span{
+    display: none;
+}
+.container1>.content{
+    width: 100%;
+    height: 30vmin;
+    text-align: center;
+}
+.container1 > .content > h1 {
+    font-size: 5vmax;
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 12vmin;
+}
+
+.container1 > .content > p {
+    font-size: 2vmax;
+    margin-top: 1vmax;
+}
+.container1>.circle{
+    width: 4vmax;
+    height: 4vmax;
+    border:2px solid white;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container1 > .circle > i {
+    font-size: 2vmax;
+}
+.container2{
+    width: 100%;
+    /* max-height:fit-content; */
+    background-color: #06080B;
+}
+.container2-content{
+    text-align: center;
+}
+.container2-content>p{
+    margin-top: 2vmax;
+}
+.container2-content>h1{
+    padding-top: 2vmax;
+    font-weight: 400;
+}
+.container2-Images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmax;
+    margin-top: 3vmax;
+}
+
+.img1 {
+    width: 25vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+
+.container2-Images>.img1>.card1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://assets.cntraveller.in/photos/643e4e30894e6f6e66aad429/16:9/w_1024%2Cc_limit/153245593);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s all;
+}
+.img1>h1,p{
+    position: relative;
+    z-index: 1;
+}
+.img1 > p {
+    margin-bottom: 7vh;
+}
+.img1:hover .card1{
+    transform: scale(1.3);
+}
+.img2 {
+    width: 25vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+
+.container2-Images>.img2>.card2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://cdn.getyourguide.com/img/tour/61a6ccb874134.jpeg/148.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s all;
+}
+.img2>h1,p{
+    position: relative;
+    z-index: 1;
+}
+.img2 > p {
+    margin-bottom: 7vh;
+}
+.img2:hover .card2{
+    transform: scale(1.3);
+}
+.img3 {
+    width: 25vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+
+.container2-Images>.img3>.card3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://ctdots.eu/wp-content/uploads/2020/09/grossglockner-pasterze-glacier-franz-joseph-hohe-tauern-austria-1200x900.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s all;
+}
+.img3>h1,p{
+    position: relative;
+    z-index: 1;
+}
+.img3 > p {
+    margin-bottom: 7vh;
+}
+.img3:hover .card3{
+    transform: scale(1.3);
+}
+.container2-btn{
+    text-align: center;
+    margin-top: 2vmax;
+}
+.container2-btn >button{
+    border: none;
+    color: rgb(50, 50, 126);
+    background: none;
+}
+
+.container3{
+    width: 100%;
+    /* height: 100%; */
+    background-color: #06080B;
+}
+.container3-content{
+    text-align: center;
+}
+.container3-content>p{
+    margin-top: 2vmax;
+}
+.container3-content>h1{
+    padding-top: 2vmax;
+    font-weight: 400;
+}
+.container3-Images{
+    width: 100%;
+    height: 60vmin;
+    margin-top: 4vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vmax;
+}
+.container3-Images>.Image1{
+    width: 40%;
+    height: 100%;
+    text-align: center;
+}
+.container3-Images>.Image1>.img4{
+     width: 95%;
+     height: 60%;
+     background-image: url(https://lp-cms-production.imgix.net/2022-03/GettyImages-526918123.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+.container3-Images>.Image1>h3{
+    margin-top: 2vmax;
+}
+.container3-Images>.Image2>h3{
+    margin-top: 2vmax;
+}
+.container3-Images>.Image2{
+    width: 40%;
+    height: 100%;
+    text-align: center;
+}
+.container3-Images>.Image2>.img5{
+     width: 95%;
+     height: 60%;
+     background-image: url(https://images.musement.com/cover/0002/13/golden-gate-bridge-jpg_header-112309.jpeg?w=1200&h=630&q=95&fit=crop);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+.container3-btn{
+    text-align: center;
+    margin-top: 2vmax;
+}
+.container3-btn >button{
+    border: none;
+    color: rgb(50, 50, 126);
+    background: none;
+}
+.container4{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://rare-gallery.com/uploads/posts/1156144-mountains-night-Moon-moonlight-atmosphere-eclipse-cloud-mountain-darkness-screenshot-atmospheric-phenomenon-computer-wallpaper-outer-space-geological-phenomenon-full-mo.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:5vmax;
+}
+.copywrite{
+    margin-top: 40vmax;
+}
+.copywrite>h3{
+    font-weight: 200;
+}
+.last{
+    display: flex;
+    gap: 2vmax;
+    margin-top: 40vmax;
+    margin-left: .5vmax;
+}
+.last>h3{
+    font-weight: 200;
+}
+@media (max-width:600px) {
+    body{
+        background-color: #06080B;
+    }
+    .nav>li{
+        display: none;
+    }
+    .nav>span{
+        display: block;
+    }
+    .nav{
+        justify-content: end;
+    }
+    .container1 > .content {
+        margin-top: 25vmax;
+    }
+    .container2-Images{
+        display: initial;  
+    }
+    .container2-Images>.img1 , .container2-Images>.img2, .container2-Images>.img3{
+        width: 80%;
+        height: 60vh;
+        margin-left: 5vmax;
+        margin-top: 4vmax;
+    }
+    .container2-content>p{
+        text-align: justify;
+        padding: 0 6vmax;
+    }
+    .container2>.container2-btn{
+        margin-top: 4vmax ;
+    }
+    .container3-Images{
+        display: initial;
+    }
+    .container3-Images> .Image1>.img4{
+        width: 80vw;
+        height:50vh ;
+        margin-left: 10vmin;
+        margin-top: 2vmax;
+    }
+    .container3-Images> .Image2>.img5{
+        width: 80vw;
+        height: 50vh;
+        margin-left: 10vmin;
+        margin-top: 3vmax;
+    }
+    .container3-Images>.Image1>h1, .container3-Images>.Image1>h3 , .container3-Images>.Image1>p{
+        width: 50vh;
+        margin-left: 3vmax;
+    }
+    .container3-Images>.Image2>h1, .container3-Images>.Image2>h3 , .container3-Images>.Image2>p{
+        width: 50vh;
+        margin-left: 3vmax;
+    }
+    .container4{
+        font-size: 1vmax;
+    }
+    .copywrite{
+        margin-top: 70vmax;
+    }
+    .last{
+        margin-top: 70vmax;
+    }
+}
